@@ -1,3 +1,7 @@
+/* Import CSS modules */
+@import url('variables.css');
+@import url('components.css');
+
 /* CSS Reset */
 * {
     margin: 0;
@@ -5,25 +9,41 @@
     box-sizing: border-box;
 }
 
-/* Root Variables */
-:root {
-    --primary-color: #333;
-    --background-color: #fff;
-    --text-color: #333;
-    --font-family: Arial, sans-serif;
-}
-
-/* Font Defaults */
+/* Body defaults */
 body {
     font-family: var(--font-family);
-    color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Container Class */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Header and Footer */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding-lg);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: var(--padding);
+    margin-top: auto;
+}
+
+/* Main content area */
+main {
+    flex: 1;
 }
