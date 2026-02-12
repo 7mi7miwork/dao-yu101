@@ -1,4 +1,4 @@
-# Step 03 — Technical Architecture Summary
+# Step 03 — Technical Architecture Summary (Visible Version)
 
 ## Component Loading System
 
@@ -24,6 +24,17 @@
 </body>
 ```
 
+### Navigation Implementation
+- Navbar links use onclick="loadComponent('pages/*.html', 'page-container')"
+- Dashboard: loads pages/dashboard.html
+- Lesson: loads pages/lesson.html
+- No page refresh, dynamic content injection
+
+### Page Components
+- **dashboard.html**: `<h1>Dashboard</h1><p>Welcome to your Dashboard!</p>`
+- **lesson.html**: `<h1>Lesson Page</h1><p>Here you can see lessons.</p>`
+- Components are fragments (no HTML structure)
+
 ### Error Handling
 - Target element validation
 - HTTP response status checking
@@ -36,6 +47,7 @@
 3. loadComponent() fetches navbar.html
 4. Navbar injected into navbar-container
 5. Console logs success/failure status
+6. Navigation links become functional
 
 ## Technical Specifications
 - Uses modern fetch API
@@ -43,3 +55,5 @@
 - Async component loading
 - Modular file structure
 - No external dependencies
+- Component fragments (not full HTML pages)
+- Event-driven navigation
