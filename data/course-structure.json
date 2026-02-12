@@ -1,0 +1,51 @@
+{
+    "course": {
+        "title": "Dao-Yu-101 Lernpfad",
+        "description": "Interaktiver Lernkurs mit Inseln und Archipelen",
+        "islands": [
+            {
+                "id": "grundlagen-insel",
+                "name": "Grundlagen Insel",
+                "description": "Lerne die Grundlagen",
+                "lessons": [
+                    {
+                        "id": "lesson-01",
+                        "title": "Einführung",
+                        "description": "Willkommen zum Kurs",
+                        "type": "content",
+                        "duration": 15
+                    },
+                    {
+                        "id": "lesson-02",
+                        "title": "Grundkonzepte",
+                        "description": "Die wichtigsten Grundlagen",
+                        "type": "content",
+                        "duration": 30
+                    }
+                ]
+            },
+            {
+                "id": "praxis-insel",
+                "name": "Praxis Insel",
+                "description": "Wende dein Wissen an",
+                "lessons": [
+                    {
+                        "id": "lesson-03",
+                        "title": "Erste Übung",
+                        "description": "Praktische Anwendung",
+                        "type": "exercise",
+                        "duration": 45
+                    },
+                    {
+                        "id": "lesson-04",
+                        "title": "Quiz Zeit",
+                        "description": "Teste dein Wissen",
+                        "type": "quiz",
+                        "quizId": "sample-quiz",
+                        "duration": 20
+                    }
+                ]
+            }
+        ]
+    }
+}

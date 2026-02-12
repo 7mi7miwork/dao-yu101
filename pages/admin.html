@@ -1,0 +1,81 @@
+<div class="content-card">
+    <h1>Admin Analytics Dashboard</h1>
+    <p>Übersicht der Lernfortschritte und Statistiken</p>
+    
+    <div class="admin-controls">
+        <button onclick="analyticsManager.exportData()">📊 Daten exportieren</button>
+        <button onclick="analyticsManager.clearData()">🗑️ Daten löschen</button>
+        <button onclick="refreshAnalytics()">🔄 Aktualisieren</button>
+    </div>
+    
+    <div class="analytics-overview">
+        <h2>Übersicht</h2>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-value" id="total-events">0</span>
+                <span class="stat-label">Gesamtereignisse</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="unique-sessions">0</span>
+                <span class="stat-label">Eindeutige Sitzungen</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="page-views">0</span>
+                <span class="stat-label">Seitenaufrufe</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="lesson-completion-rate">0%</span>
+                <span class="stat-label">Lektionsabschlussrate</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="analytics-section">
+        <h2>Lektionsstatistiken</h2>
+        <div id="lesson-analytics" class="analytics-table-container">
+            <table class="analytics-table">
+                <thead>
+                    <tr>
+                        <th>Lektion</th>
+                        <th>Insel</th>
+                        <th>Starts</th>
+                        <th>Abschlüsse</th>
+                        <th>Abschlussrate</th>
+                        <th>Durchschnittsdauer</th>
+                    </tr>
+                </thead>
+                <tbody id="lesson-analytics-body">
+                    <!-- Lesson analytics will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="analytics-section">
+        <h2>Quizstatistiken</h2>
+        <div id="quiz-analytics" class="analytics-table-container">
+            <table class="analytics-table">
+                <thead>
+                    <tr>
+                        <th>Quiz</th>
+                        <th>Starts</th>
+                        <th>Abschlüsse</th>
+                        <th>Durchschnittliche Punktzahl</th>
+                        <th>Bestehensrate</th>
+                        <th>Durchschnittsdauer</th>
+                    </tr>
+                </thead>
+                <tbody id="quiz-analytics-body">
+                    <!-- Quiz analytics will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="analytics-section">
+        <h2>Zeitlicher Verlauf</h2>
+        <div class="chart-container">
+            <canvas id="analytics-chart"></canvas>
+        </div>
+    </div>
+</div>

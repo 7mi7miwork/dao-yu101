@@ -1,0 +1,45 @@
+<div class="content-card">
+    <div id="quiz-container">
+        <h1 id="quiz-title">Quiz wird geladen...</h1>
+        <div id="quiz-info">
+            <p id="quiz-description"></p>
+            <div id="quiz-progress" class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+                </div>
+                <span id="progress-text">0%</span>
+            </div>
+        </div>
+        
+        <div id="question-container" class="question-container">
+            <div id="question-content">
+                <h3 id="question-text"></h3>
+                <div id="answer-options" class="answer-options"></div>
+                <div class="quiz-navigation">
+                    <button id="prev-question" onclick="previousQuestion()" disabled>Vorherige</button>
+                    <button id="next-question" onclick="nextQuestion()">Nächste</button>
+                    <button id="submit-quiz" onclick="submitQuiz()" style="display: none;">Quiz abschließen</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="quiz-results" class="quiz-results" style="display: none;">
+            <h2>Quiz Ergebnisse</h2>
+            <div class="result-summary">
+                <div class="score-display">
+                    <span class="score-value" id="final-score"></span>
+                    <span class="score-label">Punkte</span>
+                </div>
+                <p id="result-message"></p>
+                <div class="result-details">
+                    <p>Richtige Antworten: <span id="correct-answers"></span></p>
+                    <p>Gesamtfragen: <span id="total-questions"></span></p>
+                </div>
+            </div>
+            <div class="result-actions">
+                <button onclick="restartQuiz()">Quiz wiederholen</button>
+                <button onclick="backToDashboard()">Zurück zum Dashboard</button>
+            </div>
+        </div>
+    </div>
+</div>

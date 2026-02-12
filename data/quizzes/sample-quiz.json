@@ -1,0 +1,32 @@
+{
+    "id": "sample-quiz",
+    "title": "Grundlagen Quiz",
+    "description": "Teste deine Grundkenntnisse",
+    "timeLimit": 300,
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple-choice",
+            "question": "Was ist die Hauptstadt von Deutschland?",
+            "options": ["Berlin", "München", "Hamburg", "Köln"],
+            "correctAnswer": "Berlin",
+            "points": 10
+        },
+        {
+            "id": "q2",
+            "type": "true-false",
+            "question": "Die Erde ist flach.",
+            "options": ["Wahr", "Falsch"],
+            "correctAnswer": "Falsch",
+            "points": 10
+        },
+        {
+            "id": "q3",
+            "type": "multiple-choice",
+            "question": "Wie viele Kontinente gibt es?",
+            "options": ["5", "6", "7", "8"],
+            "correctAnswer": "7",
+            "points": 10
+        }
+    ]
+}

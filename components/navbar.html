@@ -2,5 +2,18 @@
     <ul>
         <li><a href="#dashboard" onclick="loadComponent('pages/dashboard.html', 'page-container')">Dashboard</a></li>
         <li><a href="#lesson" onclick="loadComponent('pages/lesson.html', 'page-container')">Lesson</a></li>
+        <li><a href="#admin" onclick="loadComponent('pages/admin.html', 'page-container')">Admin</a></li>
+        <li class="notification-item">
+            <button id="notification-button" onclick="toggleNotifications()" class="notification-button">
+                <span>🔔</span>
+                <span id="notification-badge" class="notification-badge" style="display: none;">0</span>
+            </button>
+        </li>
+        <li>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Suchen..." onkeyup="handleSearch(event)">
+                <button onclick="performSearch()">🔍</button>
+            </div>
+        </li>
     </ul>
 </nav>

@@ -1,4 +1,32 @@
 <div class="content-card">
     <h1>Dashboard</h1>
-    <p>Welcome to your Dashboard!</p>
+    <p>Willkommen zu deinem Lernfortschritt!</p>
+    
+    <div class="overall-progress">
+        <h2>Dein Gesamtfortschritt</h2>
+        <div class="progress-bar">
+            <div id="overall-progress-fill" class="progress-fill" style="width: 0%"></div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-value" id="completed-lessons">0</span>
+                <span class="stat-label">Abgeschlossene Lektionen</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="total-lessons-count">0</span>
+                <span class="stat-label">Gesamte Lektionen</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="overall-percentage">0%</span>
+                <span class="stat-label">Fortschritt</span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="islands-container">
+        <h2>Deine Lerninseln</h2>
+        <div id="islands-grid" class="island-grid">
+            <!-- Islands will be loaded here -->
+        </div>
+    </div>
 </div>
